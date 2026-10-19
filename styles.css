@@ -192,8 +192,6 @@ a.build:hover h3 { color: var(--accent); }
 .build .tag { align-self: flex-start; font-size: 0.78rem; color: var(--accent); border: 1px solid var(--accent); padding: 3px 11px; border-radius: 99px; margin-top: 6px; }
 
 /* ---------- Notes ---------- */
-.notes-stub { max-width: 60ch; }
-.notes-stub p { color: var(--text-soft); font-size: 1.05rem; }
 
 /* ---------- About ---------- */
 .about-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 72px; align-items: start; }
