@@ -218,7 +218,10 @@ a.build:hover h3 { color: var(--accent); }
 .timeline .what { font-weight: 500; font-size: 1rem; margin-top: 2px; }
 .timeline .where { font-family: "Source Serif 4", serif; color: var(--text-soft); font-size: 0.95rem; margin-top: 2px; }
 
-.about-facts { margin-top: 36px; display: flex; gap: 14px; flex-wrap: wrap; }
+.badge-row { margin-top: 36px; display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+.badge-row img { width: 84px; height: 84px; object-fit: contain; display: block; transition: transform 0.18s ease; }
+.badge-row a:hover img { transform: translateY(-3px); }
+.about-facts { margin-top: 20px; display: flex; gap: 14px; flex-wrap: wrap; }
 .about-facts span { font-family: "Space Grotesk", sans-serif; font-size: 0.85rem; color: var(--text-soft); border: 1px solid var(--line); padding: 7px 14px; border-radius: 99px; }
 
 /* ---------- Contact (fixed ink) ---------- */
