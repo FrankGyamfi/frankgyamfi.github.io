@@ -195,7 +195,9 @@ a.build:hover h3 { color: var(--accent); }
 
 /* ---------- About ---------- */
 .about-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 72px; align-items: start; }
-.about-photo { width: 168px; height: 168px; object-fit: cover; border-radius: 16px; border: 1.5px solid var(--line); display: block; margin: 0 0 30px auto; }
+.origin-row { display: flex; gap: 24px; align-items: flex-start; }
+.origin-row .origin { flex: 1; margin-top: 0; }
+.about-photo { width: 112px; height: 112px; object-fit: cover; border-radius: 12px; border: 1.5px solid var(--line); display: block; flex-shrink: 0; }
 .about-grid h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 600; letter-spacing: -0.02em; margin-bottom: 22px; }
 .about-grid .prose p + p { margin-top: 16px; }
 .about-grid .prose em { color: var(--accent); font-style: normal; }
@@ -298,6 +300,7 @@ footer.site a { color: var(--text-soft); }
   .case { grid-template-columns: 1fr; gap: 24px; }
   .case .viz { max-width: 440px; }
   .about-grid { grid-template-columns: 1fr; gap: 48px; }
+  .origin-row { flex-direction: column; }
   .evidence .wrap { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 640px) {
