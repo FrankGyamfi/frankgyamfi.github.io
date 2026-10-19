@@ -195,6 +195,7 @@ a.build:hover h3 { color: var(--accent); }
 
 /* ---------- About ---------- */
 .about-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 72px; align-items: start; }
+.about-photo { width: 168px; height: 168px; object-fit: cover; border-radius: 16px; border: 1.5px solid var(--line); display: block; margin: 0 0 30px auto; }
 .about-grid h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 600; letter-spacing: -0.02em; margin-bottom: 22px; }
 .about-grid .prose p + p { margin-top: 16px; }
 .about-grid .prose em { color: var(--accent); font-style: normal; }
