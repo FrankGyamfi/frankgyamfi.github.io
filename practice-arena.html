@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice Arena — Frank Adu-Gyamfi</title>
+<meta name="description" content="Practice Arena: the full-stack question-bank platform I built to pass my own certifications — PSPO I and AWS CLF-C02 as tracks on one engine.">
+<script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="name" href="index.html">Frank Adu-Gyamfi<b>.</b></a>
+    <div class="nav-right">
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="index.html#builds">Builds</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" aria-label="Switch between light and dark theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap study-hero">
+    <p class="crumb"><a href="index.html#builds">Builds</a> / Practice Arena</p>
+    <h1>The question bank I built to pass my own exams</h1>
+    <p class="finding">One quiz engine, 1,300 questions, exams as tracks &mdash; built for my PSPO&nbsp;I, rebuilt for my AWS CLF-C02, and both exams passed. Not a study platform: a mastery machine.</p>
+    <div class="study-meta">
+      <div><strong>Role</strong>Designed &amp; built &mdash; AI-assisted development</div>
+      <div><strong>Stack</strong>FastAPI, PostgreSQL, React/TypeScript</div>
+      <div><strong>Status</strong>Live &mdash; PSPO I and CLF-C02 tracks</div>
+    </div>
+  </div>
+
+  <div class="wrap study-body">
+    <div class="prose reveal">
+      <h2>The problem</h2>
+      <p>Certification prep lives on practice questions, and most question banks are uncited, error-ridden, or both &mdash; you memorize answers without knowing <em>why</em> the wrong ones are wrong, which is exactly the knowledge the real exam tests. And no bank tracks what <em>you</em> keep failing; they just deal the next random twenty.</p>
+
+      <h2>What I built</h2>
+      <p>A full-stack quiz platform &mdash; 1,300 questions (780 PSPO, 520 CLF-C02), the PSPO bank cited to source down to section and quote &mdash; where every question carries an explanation <em>and</em> a rationale for each wrong option &mdash; so a miss teaches four things, not one. Sessions are selected by a weakness tracker that knows your mastery per topic and feeds you what you keep getting wrong; practice runs in five modes, from untimed drills to full timed exam simulation, with a progress dashboard over it all.</p>
+      <p>The platform decision was the interesting one: exams are <b>tracks on one engine</b>, not separate apps. It started as a PSPO&nbsp;I bank built by focus area; when CLF-C02 came, the 520-question bank loaded as a second track &mdash; new content, zero rebuild.</p>
+
+      <h2>Live today</h2>
+      <p>Both certifications passed &mdash; the platform did its job on its builder first. It runs in production with the PSPO&nbsp;I and CLF-C02 tracks open.</p>
+      <p><a class="btn solid" href="https://practice.up.railway.app/">Open Practice Arena &rarr;</a></p>
+    </div>
+  </div>
+
+  <div class="wrap study-next">
+    <div class="study-fwd">
+      <span>Next build</span>
+      <a href="search-query-generator.html">Search Query Generator</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>&copy; 2026 Frank Adu-Gyamfi &mdash; Accra, Ghana. All rights reserved.</span>
+    <a href="mailto:gyamfifrank9@gmail.com">gyamfifrank9@gmail.com</a>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
