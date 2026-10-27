@@ -318,6 +318,7 @@ footer.site a { color: var(--text-soft); }
 /* Hero badges */
 .hero-badges { margin-top: 26px; display: flex; gap: 12px; flex-wrap: wrap; opacity: 0; animation: rise 0.7s 0.62s ease-out forwards; }
 .hero-badges span { font-family: "Space Grotesk", sans-serif; font-size: 0.82rem; color: var(--text-soft); border: 1px solid var(--line); padding: 6px 14px; border-radius: 99px; background: var(--bg-raised); }
+@media (max-width: 640px) { .hero-badges { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; } .hero-badges span { text-align: center; white-space: nowrap; padding: 6px 8px; font-size: 0.78rem; } }
 @media (prefers-reduced-motion: reduce) { .hero-badges { opacity: 1; animation: none; } }
 
 /* Portrait */
