@@ -346,3 +346,18 @@ footer.site a { color: var(--text-soft); }
 
 .hero-link { align-self: center; font-family: "Space Grotesk", sans-serif; font-size: 0.95rem; color: var(--text-soft); text-decoration-color: var(--line); margin-left: 6px; }
 .hero-link:hover { color: var(--accent); }
+
+/* credentials block under the timeline */
+.credentials { margin-top: 40px; padding-top: 28px; border-top: 1px solid var(--line); }
+.credentials h3 { font-size: 0.82rem; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; margin: 22px 0 6px; }
+.credentials h3:first-child { margin-top: 0; }
+.credentials h3 span { text-transform: none; letter-spacing: 0; font-weight: 400; color: var(--text-soft); margin-left: 6px; }
+.credentials p, .credentials li { font-family: "Source Serif 4", serif; color: var(--text-soft); font-size: 0.95rem; line-height: 1.55; }
+.credentials ul { list-style: none; }
+.credentials li + li { margin-top: 10px; }
+.credentials a { color: var(--text); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
+.credentials a:hover { text-decoration-color: var(--accent); }
+
+.credentials ul.dots li { position: relative; padding-left: 16px; }
+.credentials ul.dots li + li { margin-top: 4px; }
+.credentials ul.dots li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
