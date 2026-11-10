@@ -47,7 +47,7 @@
       const p = Math.min((now - start) / dur, 1);
       const eased = 1 - Math.pow(1 - p, 3);
       const val = Math.round(target * eased);
-      el.textContent = prefix + val.toLocaleString() + suffix;
+      el.textContent = prefix + val.toLocaleString(document.documentElement.lang || undefined) + suffix;
       if (p < 1) requestAnimationFrame(tick);
     }
     requestAnimationFrame(tick);
@@ -61,7 +61,7 @@
     stats.forEach((el) => io2.observe(el));
   } else {
     stats.forEach((el) => {
-      el.textContent = (el.dataset.prefix || "") + parseFloat(el.dataset.count).toLocaleString() + (el.dataset.suffix || "");
+      el.textContent = (el.dataset.prefix || "") + parseFloat(el.dataset.count).toLocaleString(document.documentElement.lang || undefined) + (el.dataset.suffix || "");
     });
   }
 })();

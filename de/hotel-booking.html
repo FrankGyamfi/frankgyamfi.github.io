@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotelbuchungssystem — Frank Adu-Gyamfi</title>
+<meta name="description" content="Fallstudie: ein vollständiges Hotelbuchungssystem in Excel/VBA für einen Kunden – inzwischen als vollwertige Software in Auftrag gegeben.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hotelbuchungssystem — Frank Adu-Gyamfi">
+<meta property="og:description" content="Fallstudie: ein vollständiges Hotelbuchungssystem in Excel/VBA für einen Kunden – inzwischen als vollwertige Software in Auftrag gegeben.">
+<meta property="og:url" content="https://frankadugyamfi.com/de/hotel-booking.html">
+<meta property="og:locale" content="de_DE">
+<meta property="og:image" content="https://frankadugyamfi.com/img/frank.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://frankadugyamfi.com/de/hotel-booking.html">
+<link rel="alternate" hreflang="en" href="https://frankadugyamfi.com/hotel-booking.html">
+<link rel="alternate" hreflang="de" href="https://frankadugyamfi.com/de/hotel-booking.html">
+<link rel="alternate" hreflang="x-default" href="https://frankadugyamfi.com/hotel-booking.html">
+<script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%23101622%27/%3E%3Ctext x=%2732%27 y=%2744%27 font-family=%27Arial,sans-serif%27 font-size=%2736%27 font-weight=%27bold%27 fill=%27%23E2A93B%27 text-anchor=%27middle%27%3EF%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../fonts.css">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="name" href="index.html"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 64 64" width="24" height="24"><rect width="64" height="64" rx="12" fill="#101622"/><text x="32" y="44" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#E2A93B" text-anchor="middle">F</text></svg></span><span>Frank Adu-Gyamfi<b>.</b></span></a>
+    <div class="nav-right">
+      <nav aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="index.html#work">Fallstudien</a></li>
+          <li><a href="index.html#builds">Projekte</a></li>
+          <li><a href="index.html#about">Mein Weg</a></li>
+          <li><a href="index.html#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+      <nav class="lang-switch" aria-label="Sprache"><a href="../hotel-booking.html" hreflang="en" lang="en">EN</a><span aria-current="true">DE</span></nav>
+      <button class="theme-toggle" aria-label="Zwischen hellem und dunklem Design wechseln">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap study-hero">
+    <p class="crumb"><a href="index.html#builds">Projekte</a> / Hotelbuchungssystem</p>
+    <h1>Das Buchungssystem, das seiner Tabelle entwachsen ist</h1>
+    <p class="finding">Ein kompletter Hotelbetrieb &mdash; Buchungen, Check-outs, Preise, Verfügbarkeit und Umsatz &mdash;, gesteuert über ein System, das ich in Excel und VBA gebaut habe. Es hat so gut funktioniert, dass der Kunde es jetzt als vollwertige Software in Auftrag gegeben hat.</p>
+    <div class="study-meta">
+      <div><strong>Rolle</strong>Entwurf &amp; Umsetzung &mdash; von Anfang bis Ende</div>
+      <div><strong>Kontext</strong>Insight Data Lab Consult &mdash; Kundenprojekt</div>
+      <div><strong>Technik</strong>Excel, VBA, Pivot-Berichte</div>
+    </div>
+  </div>
+
+<figure class="wrap study-viz">
+<svg viewBox="0 0 900 300" role="img" aria-label="Systemablauf: Rezeptionsmasken speisen eine Buchungsdatenbank, aus der Verfügbarkeit und ein Management-Dashboard gespeist werden">
+<g font-size="15" class="v-text">
+<rect class="v-panel" x="40" y="38" width="150" height="46" rx="8"/><text x="115" y="66" text-anchor="middle">Book Room</text>
+<rect class="v-panel" x="40" y="127" width="150" height="46" rx="8"/><text x="115" y="155" text-anchor="middle">Check Out</text>
+<rect class="v-panel" x="40" y="216" width="150" height="46" rx="8"/><text x="115" y="244" text-anchor="middle">Modify</text>
+<rect class="v-panel" x="330" y="127" width="180" height="46" rx="8"/><text x="420" y="155" text-anchor="middle">Buchungs-DB</text>
+<rect class="v-panel" x="650" y="60" width="210" height="46" rx="8"/><text x="755" y="88" text-anchor="middle">Freie Zimmer</text>
+<rect class="v-panel" x="650" y="216" width="210" height="46" rx="8"/><text x="755" y="244" text-anchor="middle">Änderungsprotokoll</text>
+</g>
+<rect class="v-panel" x="650" y="138" width="210" height="46" rx="8" stroke="none"/>
+<rect x="650" y="138" width="210" height="46" rx="8" fill="none" class="v-goldline" stroke-width="1.8"/>
+<text class="v-goldtext" x="755" y="166" font-size="15" text-anchor="middle" font-weight="600">Umsatz-Dashboard</text>
+<g class="v-dimline" stroke-width="2" fill="none">
+<path d="M190 61 C260 61, 260 150, 330 150"/>
+<path d="M190 150 H330"/>
+<path d="M190 239 C260 239, 260 150, 330 150"/>
+<path d="M510 150 C580 150, 580 83, 650 83"/>
+<path d="M510 150 H650"/>
+<path d="M510 150 C580 150, 580 239, 650 239"/>
+</g>
+<g class="v-dim"><path d="M330 150 l-11 -7 v14 z"/><path d="M650 83 l-11 -7 v14 z"/><path d="M650 161 l-11 -7 v14 z"/><path d="M650 239 l-11 -7 v14 z"/></g>
+<text class="v-dim" x="420" y="110" font-size="13" text-anchor="middle">VBA prüft &amp; schreibt</text>
+</svg>
+<figcaption>Die Rezeptionsmasken schreiben über VBA in eine einzige Buchungsdatenbank &mdash; Verfügbarkeit, Protokolle und Umsatz lesen alle daraus.</figcaption>
+</figure>
+
+  <div class="wrap study-body">
+    <div class="prose reveal">
+      <h2>Das Problem</h2>
+      <p>Ein Hotel führte seine Rezeption von Hand: Wer ist in welchem Zimmer, wer reist heute ab, was bewirkt eine Buchungsänderung bei der Rechnung? Manuelle Buchungsaufzeichnungen scheitern auf vorhersehbare Weise &mdash; doppelt gebuchte Zimmer, stille Preisanpassungen und keine verlässliche Antwort auf <em>Wie viel haben wir diesen Monat eigentlich verdient?</em></p>
+
+      <h2>Meine Rolle</h2>
+      <p>Alles &mdash; umgesetzt über meine Beratung. Ich habe mit dem Kunden die Anforderungen erhoben, das Datenmodell und die Rezeptionsmasken entworfen, den VBA-Code geschrieben und ein System übergeben, das das Personal ohne mich betreiben konnte. Die Einschränkung war Teil des Auftrags: Es musste auf dem Rechner und mit der Software laufen, die das Hotel bereits hatte. Das hieß Excel &mdash; und Excel kann einen echten Betrieb tragen, wenn man es wie ein System behandelt und nicht wie eine Tabelle.</p>
+
+      <h2>Was das Design richtig gemacht hat</h2>
+      <ul>
+        <li><b>Eine Datenbank, viele Masken.</b> Das Personal berührt nie Rohdaten &mdash; es arbeitet in den Masken Book Room, Check Out und Modify, und VBA prüft jede Eingabe, bevor sie in eine einzige Buchungsdatenbank geschrieben wird. Keine verwaisten Änderungen, keine zwei Versionen der Wahrheit.</li>
+        <li><b>Änderungen hinterlassen Spuren.</b> Jede Änderung landet in einem Protokoll &mdash; denn in einem Bargeldgeschäft ist eine Änderung, die niemand nachverfolgen kann, ein Loch, durch das Geld verschwindet.</li>
+        <li><b>Verfügbarkeit wird berechnet, nie eingetippt.</b> Freie Zimmer ergeben sich aus den Buchungsdaten, sodass die Übersicht nie von der Realität abweichen kann.</li>
+        <li><b>Die Geschäftsführung bekam ein Dashboard statt eines Datenhaufens</b> &mdash; Buchungen, Rabatte, erwartete Beträge und Umsatz, Firmenbuchungen getrennt von Laufkundschaft erfasst.</li>
+      </ul>
+
+      <h2>Was live ging</h2>
+      <p>Ein funktionierendes Buchungssystem, auf dem das Hotel seinen Betrieb führte: Zimmerbuchung und Check-out, Preisverwaltung, berechnete Verfügbarkeit, ein Änderungsprotokoll und ein Management-Dashboard &mdash; alles in einer VBA-gesteuerten Arbeitsmappe. Hier ist es, samt Bearbeitungsleiste:</p>
+
+      <figure class="study-shot reveal"><img src="../img/hotel-home.png" alt="Startbildschirm des Buchungssystems des South Ridge Hotel, gebaut in Excel: Belegung, heutige An- und Abreisen und Schnellaktionen" loading="lazy"><figcaption>Der Startbildschirm für das Personal &mdash; Belegung, Anreisen, Abreisen, Schnellaktionen. Ja, das ist Excel.</figcaption></figure>
+      <figure class="study-shot reveal"><img src="../img/hotel-booking.png" alt="Formular Book Room mit Gästedaten, Notfallkontakt, Rabatten und Buchungsdetails" loading="lazy"><figcaption>Die Maske Book Room &mdash; VBA prüft jedes Feld, bevor irgendetwas in die Datenbank gelangt.</figcaption></figure>
+      <figure class="study-shot reveal"><img src="../img/hotel-checkout.png" alt="Check-out-Maske: Suche nach Zimmernummer, fälliger Betrag und gezahlter Endbetrag" loading="lazy"><figcaption>Check-out &mdash; nach Zimmer suchen, Rechnung begleichen, protokolliert mit dem Namen der bearbeitenden Person.</figcaption></figure>
+      <figure class="study-shot reveal"><img src="../img/hotel-dashboard.png" alt="Management-Dashboard mit Buchungen, Umsatz, Rabatten und Umsatztrend, filterbar nach Woche, Monat und Jahr" loading="lazy"><figcaption>Das Management-Dashboard &mdash; Buchungen, Umsatz und Rabatte, filterbar nach Woche, Monat und Jahr. Gezeigt mit Demodaten; die echten Zahlen des Kunden bleiben seine.</figcaption></figure>
+    </div>
+
+    <div class="impact-band reveal">
+      <h2>Wirkung</h2>
+      <ul>
+        <li><b>Trug den Betrieb</b> &mdash; Buchungen, Check-outs und Umsatz in einem System</li>
+        <li><b>Erneut beauftragt</b> &mdash; der Kunde will es als vollwertige Software</li>
+        <li><b>Keine neuen Tools</b> &mdash; gebaut mit dem, was das Hotel schon hatte</li>
+      </ul>
+    </div>
+
+    <div class="prose reveal">
+      <h2>Was ich gelernt habe</h2>
+      <p>Die beste Bestätigung für ein System ist, wenn der Kunde mehr davon will. Die Excel-Version hat die Abläufe, die Zählregeln und das Dashboard bewiesen &mdash; die Softwareversion startet also mit einer Spezifikation, die den Kontakt mit einer echten Rezeption bereits überstanden hat. Genau das baue ich als Nächstes.</p>
+    </div>
+  </div>
+
+  <div class="wrap study-next">
+    <a class="study-back" href="index.html">&larr; Zur Startseite</a>
+    <div class="study-fwd">
+      <span>Weiter entdecken</span>
+      <a href="index.html#builds">Alle Projekte</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>&copy; 2026 Frank Adu-Gyamfi &mdash; Accra, Ghana. Alle Rechte vorbehalten.</span>
+    <a href="mailto:gyamfifrank9@gmail.com">gyamfifrank9@gmail.com</a>
+  </div>
+</footer>
+
+<script src="../main.js" defer></script>
+</body>
+</html>
